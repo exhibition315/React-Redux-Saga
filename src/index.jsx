@@ -18,7 +18,7 @@ import reducers from './rootReducer';
 
 import routeLoader from './routers/routeLoader';
 
-import './styles/style.css';
+import './styles/style.scss';
 
 console.log('Process environment variable');
 console.log(`__BUILD__: ${__BUILD__}`);

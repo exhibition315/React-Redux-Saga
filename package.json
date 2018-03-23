@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "node server.js",
+        "start": "cross-env build=DEV node server",
         "normal-build": "webpack --progress -p --config webpack.config.js",
         "build-uat": "cross-env build=UAT webpack --progress --config webpack.config.js",
         "build-prod": "cross-env build=PROD webpack --progress --config webpack.config.js",
@@ -31,7 +31,9 @@
         "eslint-plugin-import": "^2.8.0",
         "eslint-plugin-jsx-a11y": "^6.0.3",
         "eslint-plugin-react": "^7.6.1",
+        "node-sass": "^4.7.2",
         "react-hot-loader": "^1.3.0",
+        "sass-loader": "^6.0.7",
         "style-loader": "^0.18.2",
         "webpack": "^1.13.3",
         "webpack-dev-server": "^1.16.2"
