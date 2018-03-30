@@ -32,10 +32,10 @@ module.exports = {
                 comments: false, // remove all comments
             },
         }),
-        new webpack.optimize.OccurenceOrderPlugin()
+        new webpack.optimize.OccurrenceOrderPlugin()
     ],
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['*', '.js', '.jsx']
     },
     module: {
         noParse: [/jszip.js$/],
